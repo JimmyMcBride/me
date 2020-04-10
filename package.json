@@ -5,11 +5,16 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "style": "yarn add bushido-strap && next dev"
   },
   "dependencies": {
+    "bushido-strap": "^3.0.0",
+    "gray-matter": "^4.0.2",
+    "marked": "^0.8.2",
     "next": "9.3.4",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react-dom": "16.13.1",
+    "webfontloader": "^1.6.28"
   }
 }

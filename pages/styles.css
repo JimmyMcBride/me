@@ -1,0 +1,17 @@
+.app {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-height: 100%;
+}
+
+/* 
+.markdown-body p img {
+  max-width: 75%;
+}
+*/
+
+.markdown-body h2 {
+  text-align: center;
+}
