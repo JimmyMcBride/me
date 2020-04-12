@@ -13,13 +13,11 @@ export default ({ slugs }) => {
         <Flex wrap="true" jcEvenly w="90%" m="5rem 0">
           {slugs.map((slug) => {
             return (
-              <Card w="30rem" p="0" key={slug.link} shade>
-                <Box w="30rem" pointer>
-                  <Link href={`/blog/${slug.link}`}>
+              <Link href={`/blog/${slug.link}`}>
+                <Card w="30rem" p="0" key={slug.link} shade pointer>
+                  <Box w="30rem" pointer>
                     <img src={slug.image} alt="blog banner" />
-                  </Link>
-                </Box>
-                <Link href={`/blog/${slug.link}`}>
+                  </Box>
                   <Ref
                     m="2rem 0"
                     pointer
@@ -30,9 +28,9 @@ export default ({ slugs }) => {
                   >
                     {slug.title}
                   </Ref>
-                </Link>
-                <Text p="1rem">{slug.description}</Text>
-              </Card>
+                  <Text p="1rem">{slug.description}</Text>
+                </Card>
+              </Link>
             );
           })}
         </Flex>
