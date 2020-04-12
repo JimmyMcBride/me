@@ -8,7 +8,7 @@ import path from "path";
 import { Card } from "bushido-strap";
 
 const Home = ({ htmlString }) => (
-  <Layout title="Home">
+  <Layout title="Jimmy McBride">
     <main>
       <Card taCenter>
         <div dangerouslySetInnerHTML={{ __html: htmlString }} />
