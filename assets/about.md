@@ -4,11 +4,11 @@
 
 ## Full Stack Web Developer
 
---------------------------------
+<!-- -------------------------------- -->
 
 **JavaScript | TypeScript | Python | React | Bash | Linux | Node | GraphQL | REST**
 
---------------------------------
+<!-- -------------------------------- -->
 
 <!-- ### [__Check out my blog!__](https://dev.to/jimmymcbride) -->
 

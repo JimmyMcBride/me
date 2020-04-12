@@ -48,7 +48,7 @@ export default function Layout({
               </Flex>
             </Flex>
             <Flex aiCenter>
-              <Text bold lf color={theme.gray8}>
+              <Text bold lf color={theme.gray8} className="my-name">
                 Jimmy McBride
               </Text>
               <Box w="2rem" />

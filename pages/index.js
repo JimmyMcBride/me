@@ -11,7 +11,10 @@ const Home = ({ htmlString }) => (
   <Layout title="Jimmy McBride">
     <main>
       <Card taCenter>
-        <div dangerouslySetInnerHTML={{ __html: htmlString }} />
+        <div
+          className="markdown-body"
+          dangerouslySetInnerHTML={{ __html: htmlString }}
+        />
       </Card>
     </main>
   </Layout>
