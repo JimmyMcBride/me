@@ -27,3 +27,7 @@ Love to blog about all things related to React, bash, Linux, and general experim
 --------------------------------
 
 Email: mcbride967@gmail.com
+
+[Dev blog](https://dev.to/jimmymcbride)
+
+[Twitter](https://twitter.com/McBride1105)
