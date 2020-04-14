@@ -1,5 +1,4 @@
 import fs from "fs";
-import Link from "next/link";
 import path from "path";
 import matter from "gray-matter";
 import Layout from "../../components/Layout";
@@ -10,7 +9,7 @@ export default ({ htmlString, data }) => {
   return (
     <Layout title={`${data.title}`}>
       <Wrapper>
-        <Card m="2rem" maxW="88rem">
+        <Card m="2rem 0 6rem 0" w="94%" maxW="88rem">
           <div
             className="markdown-body"
             dangerouslySetInnerHTML={{ __html: htmlString }}
@@ -23,13 +22,11 @@ export default ({ htmlString, data }) => {
 
 export const getStaticPaths = async () => {
   const files = fs.readdirSync("posts");
-  console.log("Files", files);
   const paths = files.map((filename) => ({
     params: {
       slug: filename.replace(".md", ""),
     },
   }));
-  console.log("Paths", paths);
   return {
     paths,
     fallback: false,

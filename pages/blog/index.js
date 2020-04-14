@@ -8,9 +8,9 @@ import { Box, Card, Flex, Ref, Text, theme } from "bushido-strap";
 export default ({ slugs }) => {
   return (
     <Layout title="Blog">
-      <Card w="90%" bg={theme.whiteAlpha8}>
+      <Card w="94%" bg={theme.whiteAlpha8} maxW="150rem">
         <h2>Check out some of my recent blogs!</h2>
-        <Flex wrap="true" jcEvenly w="90%" m="5rem 0">
+        <Flex wrap="true" jcEvenly m="5rem 0" stretch>
           {slugs.map((slug) => {
             return (
               <Link href={`/blog/${slug.link}`}>

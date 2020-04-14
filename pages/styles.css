@@ -6,17 +6,7 @@
   min-height: 100%;
 }
 
-/* 
-.markdown-body p img {
-  max-width: 75%;
-}
-*/
-
-/* .markdown-body h2 {
-  text-align: center;
-} */
-
-@media only screen and (max-width: 440px) {
+@media only screen and (max-width: 540px) {
   .my-name {
     display: none;
   }

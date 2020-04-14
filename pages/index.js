@@ -9,7 +9,7 @@ import { Card } from "bushido-strap";
 
 const Home = ({ htmlString }) => (
   <Layout title="Jimmy McBride">
-    <Card taCenter w="90%">
+    <Card taCenter w="94%" maxW="88rem">
       <div
         className="markdown-body"
         dangerouslySetInnerHTML={{ __html: htmlString }}

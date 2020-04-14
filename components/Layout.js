@@ -46,6 +46,20 @@ export default function Layout({
                   </Ref>
                 </Link>
               </Flex>
+              <Box w="2rem" />
+              <Flex aiCenter p="0 1rem" pointer>
+                <Link href="/projects" passHref>
+                  <Ref
+                    lf
+                    bold
+                    pointer
+                    color={theme.gray8}
+                    hvrColor={theme.blackAlpha6}
+                  >
+                    Projects
+                  </Ref>
+                </Link>
+              </Flex>
             </Flex>
             <Flex aiCenter>
               <Text bold lf color={theme.gray8} className="my-name">
