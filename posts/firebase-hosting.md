@@ -1,21 +1,24 @@
 ---
 title: "Firebase Hosting 101"
 image: "https://res.cloudinary.com/practicaldev/image/fetch/s--h1B5oG-3--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://thepracticaldev.s3.amazonaws.com/i/rcrwu7fyg6guy7na0xv1.png"
-description: "Firebase is an incredible platform to connect any iOS, android and/or web app too.  By connecting your project to Google's Firebase you will have access to their cloud storage, cloud firestore and real-time database, authentication, analytics and much more."
+description: "Firebase is an incredible platform to connect any iOS, android and/or web app too. By connecting your project to Google's Firebase you will have access to their cloud storage, cloud firestore and real-time database, authentication, analytics and much more."
 ---
-## Prerequisites
+
+## Firebase Hosting 101 🔥
 
 ![Banner](https://res.cloudinary.com/practicaldev/image/fetch/s--h1B5oG-3--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://thepracticaldev.s3.amazonaws.com/i/rcrwu7fyg6guy7na0xv1.png)
+
+### Prerequisites
 
 - GitHub account (having bash set up and knowing a few basic .git commands in the terminal will come in handy!)
 - Firebase account
 - Node.js installed (Optional: Install yarn as well, if you don't already have it. I will be using yarn mostly in this project.)
-Firebase tools globally installed: `npm i --global firebase-tools` **or** `yarn global add firebase-tools`. Don't forget to add `sudo` if you're on mac or Linux when installing packages globally.
+  Firebase tools globally installed: `npm i --global firebase-tools` **or** `yarn global add firebase-tools`. Don't forget to add `sudo` if you're on mac or Linux when installing packages globally.
 - You should also have serve installed so we can run our build folder on a local server. More on why later, to install serve globally simply use: `npm i --global serve` **or** `yarn global add serve`.
 
-### About this tutorial
+#### About this tutorial
 
-Firebase is an incredible platform to connect any iOS, android and/or web app too.  By connecting your project to Google's Firebase you will have access to their cloud storage, cloud firestore and real-time database, authentication, analytics and much more.
+Firebase is an incredible platform to connect any iOS, android and/or web app too. By connecting your project to Google's Firebase you will have access to their cloud storage, cloud firestore and real-time database, authentication, analytics and much more.
 Firebase handles all of our hosting and back end needs in one place that is incredibly easy to use, once you got the know-how.
 
 In this tutorial, we are going to cover only how to deploy a react app to Firebase. I am going to use the create-react-app we've hosted in the next tutorial on how to set up user authentication with Firebase using hooks and redux so stay tuned for that!
@@ -39,7 +42,7 @@ Now that our project has been created on GitHub lets copy that HTTPS or SSH (whi
 **_Fig. 3_**
 ![Copy repo link](https://thepracticaldev.s3.amazonaws.com/i/ehn8n8cpas5934i7jgd2.png)
 
-Once we've cloned our project in the directory we want to use, before we cd inside of that directory we can run `create-react-app <name-of-your-project>` and it will run CRA inside of the repo we just cloned as long as we name it the same as the cloned repo when we run CRA. Now we have our CRA in the root and can cd inside our project directory and `yarn start`. *Note: If you want to use npm, then delete your yarn.lock file so that you don't have a yarn.lock AND a package-lock.json file in the same project. This can lead to issues, however, I personally recommend sticking with yarn.*
+Once we've cloned our project in the directory we want to use, before we cd inside of that directory we can run `create-react-app <name-of-your-project>` and it will run CRA inside of the repo we just cloned as long as we name it the same as the cloned repo when we run CRA. Now we have our CRA in the root and can cd inside our project directory and `yarn start`. _Note: If you want to use npm, then delete your yarn.lock file so that you don't have a yarn.lock AND a package-lock.json file in the same project. This can lead to issues, however, I personally recommend sticking with yarn._
 
 **_Fig. 4_**
 
@@ -93,7 +96,7 @@ Now let's allow Firebase CLI to use our Google account:
 
 And, wallah!!! We are now logged into Firebase and can use our Firebase account in our terminal.
 
- **_Fig. 13_**
+**_Fig. 13_**
 
 ![Successfully logged in](https://thepracticaldev.s3.amazonaws.com/i/pen7bngv4y9t1nzwwftz.png)
 
@@ -101,7 +104,7 @@ And, wallah!!! We are now logged into Firebase and can use our Firebase account 
 
 Now it's time to create a build folder that will be the source we want Firebase to look at when it deploys our web app. To do this simply run `yarn build` **or** `npm run-scripts build`
 
- **_Fig. 14_**
+**_Fig. 14_**
 
 ![Alt Text](https://thepracticaldev.s3.amazonaws.com/i/qexwrqbxgbcm00zsgr4k.png)
 
@@ -166,4 +169,4 @@ Type `firebase deploy` into the terminal and Firebase will deploy your site and 
 
 ![You can see when we visit the hosting URL we can see our CRA](https://thepracticaldev.s3.amazonaws.com/i/jxzxiougyxmcqyssy4kv.png)
 
-Thanks for following along with me this far. I'm going to use this project as the base for my next Firebase tutorial where we will go over authentication and Redux using hooks, so be sure to subscribe and stay tuned! *Cheers*
+Thanks for following along with me this far. I'm going to use this project as the base for my next Firebase tutorial where we will go over authentication and Redux using hooks, so be sure to subscribe and stay tuned! _Cheers_
