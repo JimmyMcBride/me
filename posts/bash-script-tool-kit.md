@@ -53,7 +53,24 @@ Bash comes with a few variables already that you can use. Here are some I use th
 
 #### Example: File name -> new-project
 
-![bash script new project](https://i.imgur.com/47kwBGg.png)
+```bash
+#!/bin/bash
+
+# Push to projects directory with an absolute path
+pushd ~/Documents/projects
+
+# Run create-react-app in projects directory
+yarn create react-app "$1"
+
+# Move inside the new project folder with a relative path
+pushd "$1"
+
+# Open project in VS Code
+code .
+
+# Start server
+yarn start
+```
 
 Here we can type `new-project my-project` and it will create a new react app with the name of our first argument ('my-project' in this case) and then move inside that directory, open the project in VS Code and start the server.
 
@@ -63,11 +80,37 @@ Since we used an absolute path at the beginning of our script, it will take us t
 
 Syntax for moving files:
 
-![bash mv command](https://i.imgur.com/P7RxNd5.png)
+```bash
+mv <target> <destination>
+# or
+mv <target> <target> <destination>
+
+# Examples
+
+# Moves file1 into folder1
+mv file1 folder1
+
+# Moves file1 and file2 into folder1
+mv file1 file2 folder1
+
+# Moves folder1 and file1 into folder2
+mv folder1 file2 folder1
+```
 
 The syntax for copying files and folders is:
 
-![bash cp command](https://i.imgur.com/bZkDtr5.png)
+```bash
+cp <target> <destination>
+
+# Copies file1 into folder1
+cp file1 folder1
+
+# If you want to copy an empty folder somewhere:
+cp folder1 folder2
+
+# If the folder is not empty, you want to copy it recursively:
+cp -r folder1 folder2
+```
 
 ### Conclusion
 
