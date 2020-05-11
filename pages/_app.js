@@ -8,13 +8,15 @@ class MyApp extends App {
   render() {
     const { Component, pageProps } = this.props;
     return (
-      // <AppWrapper className="app" bgSrc="/blog-bg.jpg">
-      <AppWrapper className="app" bg={theme.gray5}>
-        <Head>
-          <title>TypeScript/Next/GraphQL</title>
-        </Head>
-        <Component {...pageProps} />
-      </AppWrapper>
+      <>
+        <Head></Head>
+        <body>
+          <AppWrapper className="app" bg={theme.gray5}>
+            <Component {...pageProps} />
+          </AppWrapper>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/prism.min.js"></script>
+        </body>
+      </>
     );
   }
 }

@@ -3,16 +3,17 @@ import Layout from "../components/Layout";
 // import about from "../assets/about.md";
 import fs from "fs";
 import matter from "gray-matter";
-import marked from "marked";
 import path from "path";
 import { Card } from "bushido-strap";
+import ReactMarkdown from "react-markdown/with-html";
 
 const Home = ({ htmlString }) => (
   <Layout title="Jimmy McBride">
     <Card taCenter w="94%" maxW="88rem">
-      <div
+      <ReactMarkdown
         className="markdown-body"
-        dangerouslySetInnerHTML={{ __html: htmlString }}
+        escapeHtml={false}
+        source={htmlString}
       />
     </Card>
   </Layout>
@@ -23,10 +24,9 @@ export const getStaticProps = async () => {
     .readFileSync(path.join("assets", "about.md"))
     .toString();
   const parsedMarkdown = matter(markdownWithMetaData);
-  const htmlString = marked(parsedMarkdown.content);
   return {
     props: {
-      htmlString,
+      htmlString: parsedMarkdown.content,
       data: parsedMarkdown.data,
     },
   };

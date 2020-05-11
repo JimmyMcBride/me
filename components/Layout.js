@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Head from "next/head";
-import { Wrapper, NavBar, Box, Flex, Ref, Text, theme } from "bushido-strap";
+import { Wrapper, NavBar, Box, Flex, Text, theme } from "bushido-strap";
 
 const navHeight = "5rem";
 
@@ -16,12 +16,12 @@ export default function Layout({
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <header>
-        <NavBar bg={theme.whiteAlpha8} drape>
+        <NavBar bg={theme.colors.whiteAlpha9} drape>
           <Flex stretch jcBetween aiCenter h={navHeight}>
             <Flex m="0 0 0 2rem">
               <Flex aiCenter p="0 1rem" pointer>
                 <Link href="/" passHref>
-                  <Ref
+                  <Text
                     lf
                     bold
                     pointer
@@ -29,13 +29,13 @@ export default function Layout({
                     hvrColor={theme.blackAlpha6}
                   >
                     Home
-                  </Ref>
+                  </Text>
                 </Link>
               </Flex>
               <Box w="2rem" />
               <Flex aiCenter p="0 1rem" pointer>
                 <Link href="/blog" passHref>
-                  <Ref
+                  <Text
                     lf
                     bold
                     pointer
@@ -43,13 +43,13 @@ export default function Layout({
                     hvrColor={theme.blackAlpha6}
                   >
                     Blog
-                  </Ref>
+                  </Text>
                 </Link>
               </Flex>
               <Box w="2rem" />
               <Flex aiCenter p="0 1rem" pointer>
                 <Link href="/projects" passHref>
-                  <Ref
+                  <Text
                     lf
                     bold
                     pointer
@@ -57,12 +57,19 @@ export default function Layout({
                     hvrColor={theme.blackAlpha6}
                   >
                     Projects
-                  </Ref>
+                  </Text>
                 </Link>
               </Flex>
             </Flex>
             <Flex aiCenter>
-              <Text bold lf color={theme.gray8} className="my-name">
+              <Text
+                as="h2"
+                bold
+                lf
+                m="0"
+                color={theme.gray8}
+                className="my-name"
+              >
                 Jimmy McBride
               </Text>
               <Box w="2rem" />
