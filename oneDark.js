@@ -39,110 +39,110 @@ export default {
     margin: ".5em 0",
     overflow: "auto",
     borderRadius: "0.3em",
-    background: "#1d1f21",
+    background: "#212121",
   },
   ':not(pre) > code[class*="language-"]': {
-    background: "#1d1f21",
+    background: "#212121",
     padding: ".1em",
     borderRadius: ".3em",
   },
   comment: {
-    color: "#7C7C7C",
+    color: "#90A4AE",
   },
   prolog: {
-    color: "#7C7C7C",
+    color: "#90A4AE",
   },
   doctype: {
-    color: "#7C7C7C",
+    color: "#90A4AE",
   },
   cdata: {
-    color: "#7C7C7C",
+    color: "#90A4AE",
   },
   punctuation: {
-    color: "#c5c8c6",
+    color: "#FFD54F",
   },
   ".namespace": {
     Opacity: ".7",
   },
   property: {
-    color: "#96CBFE",
+    color: "#40c4ff",
   },
   keyword: {
-    color: "#96CBFE",
+    color: "#40c4ff",
   },
   tag: {
-    color: "#96CBFE",
+    color: "#40c4ff",
   },
   "class-name": {
-    color: "#FFFFB6",
+    color: "#FF9800",
     textDecoration: "underline",
   },
   boolean: {
-    color: "#99CC99",
+    color: "#9FA8DA",
   },
   constant: {
-    color: "#99CC99",
+    color: "#9FA8DA",
   },
   symbol: {
-    color: "#f92672",
+    color: "#F06292",
   },
   deleted: {
-    color: "#f92672",
+    color: "#F06292",
   },
   number: {
-    color: "#FF73FD",
+    color: "#F06292",
   },
   selector: {
-    color: "#A8FF60",
+    color: "#81C784",
   },
   "attr-name": {
-    color: "#A8FF60",
+    color: "#81C784",
   },
   string: {
-    color: "#A8FF60",
+    color: "#81C784",
   },
   char: {
-    color: "#A8FF60",
+    color: "#81C784",
   },
   builtin: {
-    color: "#A8FF60",
+    color: "#81C784",
   },
   inserted: {
-    color: "#A8FF60",
+    color: "#81C784",
   },
   variable: {
-    color: "#C6C5FE",
+    color: "#E0F2F1",
   },
   operator: {
-    color: "#EDEDED",
+    color: "#E0F2F1",
   },
   entity: {
-    color: "#FFFFB6",
+    color: "#FFECB3",
     cursor: "help",
   },
   url: {
-    color: "#96CBFE",
+    color: "#03A9F4",
   },
   ".language-css .token.string": {
-    color: "#87C38A",
+    color: "#26A69A",
   },
   ".style .token.string": {
-    color: "#87C38A",
+    color: "#26A69A",
   },
   atrule: {
-    color: "#F9EE98",
+    color: "#FFE082",
   },
   "attr-value": {
-    color: "#F9EE98",
+    color: "#FFE082",
   },
   function: {
-    color: "#DAD085",
+    color: "#FFD54F",
   },
   regex: {
-    color: "#E9C062",
+    color: "#FFA000",
   },
   important: {
-    color: "#fd971f",
+    color: "#F44336",
     fontWeight: "bold",
   },
   bold: {
