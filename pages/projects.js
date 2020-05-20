@@ -9,7 +9,7 @@ export default ({ slugs }) => {
   return (
     <Layout title="Projects">
       <Card shade w="94%" maxW="150rem">
-        <Text xlf bold>
+        <Text xlf bold as="h2">
           Some Of My Recent Projects
         </Text>
         <Box h="2rem" />

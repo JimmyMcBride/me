@@ -9,7 +9,9 @@ export default ({ slugs }) => {
   return (
     <Layout title="Blog">
       <Card shade w="94%" maxW="150rem">
-        <h2>Check out some of my recent blogs!</h2>
+        <Text xlf bold as="h2">
+          Check out some of my recent blogs!
+        </Text>
         <Flex wrap="true" jcEvenly m="5rem 0" stretch>
           {slugs.map((slug) => {
             return (
