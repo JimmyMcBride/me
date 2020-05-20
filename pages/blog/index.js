@@ -8,7 +8,7 @@ import { Box, Card, Flex, Text, theme } from "sriracha-ui";
 export default ({ slugs }) => {
   return (
     <Layout title="Blog">
-      <Card shade w="94%" bg={theme.whiteAlpha8} maxW="150rem">
+      <Card shade w="94%" maxW="150rem">
         <h2>Check out some of my recent blogs!</h2>
         <Flex wrap="true" jcEvenly m="5rem 0" stretch>
           {slugs.map((slug) => {
@@ -31,12 +31,14 @@ export default ({ slugs }) => {
                     pointer
                     bold
                     lf
-                    color={theme.gray9}
-                    hvrColor={theme.gray6}
+                    color={theme.colors.gray9}
+                    hvrColor={theme.colors.gray6}
                   >
                     {slug.title}
                   </Text>
-                  <Text p="1rem">{slug.description}</Text>
+                  <Text p="1rem" pointer>
+                    {slug.description}
+                  </Text>
                 </Card>
               </Link>
             );

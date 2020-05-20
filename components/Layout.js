@@ -64,7 +64,6 @@ export default function Layout({
             <Flex aiCenter>
               <Text
                 as="p"
-                // bold
                 lf
                 m="0"
                 color={theme.colors.gray9}
