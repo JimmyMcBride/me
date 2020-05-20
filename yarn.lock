@@ -5267,10 +5267,10 @@ sprintf-js@~1.0.2:
   resolved "https://registry.yarnpkg.com/sprintf-js/-/sprintf-js-1.0.3.tgz#04e6926f662895354f3dd015203633b857297e2c"
   integrity sha1-BOaSb2YolTVPPdAVIDYzuFcpfiw=
 
-sriracha-ui@^0.5.2:
-  version "0.5.2"
-  resolved "https://registry.yarnpkg.com/sriracha-ui/-/sriracha-ui-0.5.2.tgz#070d58c14550462002d4f06f28b6252ec4277093"
-  integrity sha512-kkA2egeufGXUF7jAkST1vmncLrr+dlPeDqnGPfrG7OCGKPL2lPQJv9oVIiJQHqBKn/W03DeEHw7t9r92m5z3PQ==
+sriracha-ui@^0.5.3:
+  version "0.5.3"
+  resolved "https://registry.yarnpkg.com/sriracha-ui/-/sriracha-ui-0.5.3.tgz#439445b95cc18f557de05ce8f3d3cb1f6ff4fe40"
+  integrity sha512-csQQRTnY4ktJJlzbJFJieMgW08rTU9vS8mPxem8DNAPuGcUqa1PM84I028VB2EIQQ6A9JPUJWred5+feE+7rXg==
   dependencies:
     "@callstack/react-theme-provider" "^2.1.0"
     styled-components "^5.0.1"

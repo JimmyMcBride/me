@@ -53,7 +53,7 @@ export default function Layout({
                 Jimmy McBride
               </Text>
               <Box w="2rem" />
-              <Box sqr="4rem" circle m="0 2rem 0 0" onClick={toggleCabinet}>
+              <Box sqr="4rem" circle m="0 2rem 0 0">
                 <img src="/jimicon.png" alt="me" />
               </Box>
             </Flex>
