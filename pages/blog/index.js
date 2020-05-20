@@ -26,7 +26,7 @@ export default ({ slugs }) => {
                     <img src={slug.image} alt="blog banner" />
                   </Box>
                   <Text
-                    as="a"
+                    as="h2"
                     m="2rem 0"
                     pointer
                     bold
