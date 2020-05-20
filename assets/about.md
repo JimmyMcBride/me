@@ -1,6 +1,4 @@
-# Team Lead at Lambda School
-
-<!-- ![lambda school logo](https://i.imgur.com/fLDbfDP.png) -->
+# Team Lead at Lambda School ![lambda school logo](https://i.imgur.com/fLDbfDP.png)
 
 ![about me banner](https://i.imgur.com/0PP3oVh.png)
 

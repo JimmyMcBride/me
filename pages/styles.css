@@ -6,7 +6,21 @@
   min-height: 100%;
 }
 
-@media only screen and (max-width: 540px) {
+.nav-cabinet-menu {
+  display: none;
+}
+
+@media only screen and (max-width: 650px) {
+  .nav-cabinet-menu {
+    display: block;
+  }
+
+  .nav-link-list {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 350px) {
   .my-name {
     display: none;
   }

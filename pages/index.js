@@ -4,7 +4,7 @@ import Layout from "../components/Layout";
 import fs from "fs";
 import matter from "gray-matter";
 import path from "path";
-import { Card, Text } from "sriracha-ui";
+import { Card } from "sriracha-ui";
 import ReactMarkdown from "react-markdown/with-html";
 
 const Home = ({ markdownString }) => (
