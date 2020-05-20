@@ -1523,15 +1523,6 @@ builtin-status-codes@^3.0.0:
   resolved "https://registry.yarnpkg.com/builtin-status-codes/-/builtin-status-codes-3.0.0.tgz#85982878e21b98e1c66425e03d0174788f569ee8"
   integrity sha1-hZgoeOIbmOHGZCXgPQF0eI9Wnug=
 
-bushido-strap@^3.3.3:
-  version "3.3.3"
-  resolved "https://registry.yarnpkg.com/bushido-strap/-/bushido-strap-3.3.3.tgz#c770b842a0ba99d55bda8d5ffc8b1f7bb4df1fb6"
-  integrity sha512-XojUQNEGsCE1M+3rUAsN9CIF2pB5kVzIDqtSqEcR9ft7z9y3xKIjBkR3oO9oQcj7U0DSjNe/FWpH3hzLCj04GQ==
-  dependencies:
-    "@callstack/react-theme-provider" "^2.1.0"
-    styled-components "^5.0.1"
-    styled-map "^3.3.0"
-
 cacache@^12.0.2:
   version "12.0.4"
   resolved "https://registry.yarnpkg.com/cacache/-/cacache-12.0.4.tgz#668bcbd105aeb5f1d92fe25570ec9525c8faa40c"
@@ -5059,6 +5050,15 @@ sprintf-js@~1.0.2:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/sprintf-js/-/sprintf-js-1.0.3.tgz#04e6926f662895354f3dd015203633b857297e2c"
   integrity sha1-BOaSb2YolTVPPdAVIDYzuFcpfiw=
+
+sriracha-ui@^0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/sriracha-ui/-/sriracha-ui-0.5.0.tgz#4b05473825fdd2d3f4cd3ede9ecfab87bf186983"
+  integrity sha512-sgN1Yrh1lfKLc7l+d47ZQhBVxSrNnkPgdvSlHodm+8ndLc1My09a1Unk1o4S3bJ/8c3+oPJGjVhjeYA271KNcw==
+  dependencies:
+    "@callstack/react-theme-provider" "^2.1.0"
+    styled-components "^5.0.1"
+    styled-map "^3.3.0"
 
 ssri@^6.0.1:
   version "6.0.1"

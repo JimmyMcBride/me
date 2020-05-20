@@ -3,22 +3,30 @@ import path from "path";
 import matter from "gray-matter";
 import Layout from "../../components/Layout";
 import Link from "next/link";
-import { Box, Card, Flex, Ref, Text, theme } from "bushido-strap";
+import { Box, Card, Flex, Text, theme } from "sriracha-ui";
 
 export default ({ slugs }) => {
   return (
     <Layout title="Blog">
-      <Card w="94%" bg={theme.whiteAlpha8} maxW="150rem">
+      <Card shade w="94%" bg={theme.whiteAlpha8} maxW="150rem">
         <h2>Check out some of my recent blogs!</h2>
         <Flex wrap="true" jcEvenly m="5rem 0" stretch>
           {slugs.map((slug) => {
             return (
               <Link href={`/blog/${slug.link}`} key={slug.link}>
-                <Card w="30rem" p="0" key={slug.link} shade pointer>
+                <Card
+                  w="30rem"
+                  p="0"
+                  key={slug.link}
+                  shade
+                  pointer
+                  hvrShadow={theme.shadows[2]}
+                >
                   <Box w="30rem" pointer>
                     <img src={slug.image} alt="blog banner" />
                   </Box>
-                  <Ref
+                  <Text
+                    as="a"
                     m="2rem 0"
                     pointer
                     bold
@@ -27,7 +35,7 @@ export default ({ slugs }) => {
                     hvrColor={theme.gray6}
                   >
                     {slug.title}
-                  </Ref>
+                  </Text>
                   <Text p="1rem">{slug.description}</Text>
                 </Card>
               </Link>

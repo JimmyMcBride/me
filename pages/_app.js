@@ -1,8 +1,8 @@
 import App from "next/app";
 import Head from "next/head";
-import { AppWrapper, theme } from "bushido-strap";
+import { AppWrapper, theme } from "sriracha-ui";
 import "./styles.css";
-import "bushido-strap/css/main.css";
+import "sriracha-ui/css/main.css";
 
 class MyApp extends App {
   render() {

@@ -45,10 +45,10 @@ Now if you were to save that to your .bashrc file and reload your terminal and t
 
 Bash comes with a few variables already that you can use. Here are some I use the most:
 
-- \$PATH: returns to you all the paths to bin folders you can use to put your bash scripts in.
-- \$HOME: returns to you your home route. Usually looks like `home/username`
-- \$USERNAME: returns your username.
-- \$PWD: returns your Present Working Directory
+- $PATH: returns to you all the paths to bin folders you can use to put your bash scripts in.
+- $HOME: returns to you your home route. Usually looks like `home/username`
+- $USERNAME: returns your username.
+- $PWD: returns your Present Working Directory
 - $1, $2, etc: When you type the name of your bash script it runs the file. You can also type in extra arguments. If you do \$1 becomes the first argument you typed after the name of your script and so on.
 
 #### Example: File name -> new-project

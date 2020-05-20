@@ -1,4 +1,4 @@
-import { Card, Text, Box, Flex, Ref, theme } from "bushido-strap";
+import { Card, Text, Box, Flex, theme } from "sriracha-ui";
 import Layout from "../components/Layout";
 import fs from "fs";
 import path from "path";
@@ -8,7 +8,7 @@ import Link from "next/link";
 export default ({ slugs }) => {
   return (
     <Layout title="Projects">
-      <Card w="94%" maxW="150rem">
+      <Card shade w="94%" maxW="150rem">
         <Text xlf bold>
           Some Of My Recent Projects
         </Text>
@@ -16,24 +16,33 @@ export default ({ slugs }) => {
         <Flex wrap="true" jcAround>
           {slugs.map((slug) => {
             return (
-              <Ref href={slug.url} m="2rem 0">
-                <Card shade w="30rem" h="44rem" jcBetween>
+              <Link href={slug.url} passHref>
+                <Card
+                  shade
+                  w="30rem"
+                  h="46rem"
+                  jcBetween
+                  p="0"
+                  hvrShadow={theme.shadows[2]}
+                >
                   <Box pointer>
                     <img src={slug.img} alt="thumbnail" />
                   </Box>
                   <Text lf bold pointer>
                     {slug.title}
                   </Text>
-                  <Ref
+                  <Text
+                    as="a"
                     color={theme.blue5}
                     hvrColor={theme.blue8}
                     href={slug.github}
                     bold
                   >
                     GitHub
-                  </Ref>
+                  </Text>
                   {slug.youTube ? (
-                    <Ref
+                    <Text
+                      as="a"
                       bold
                       color={theme.red5}
                       hvrColor={theme.red8}
@@ -41,11 +50,11 @@ export default ({ slugs }) => {
                       pointer
                     >
                       YouTube Video
-                    </Ref>
+                    </Text>
                   ) : null}
-                  <Text>{slug.description}</Text>
+                  <Text p="1rem">{slug.description}</Text>
                 </Card>
-              </Ref>
+              </Link>
             );
           })}
         </Flex>

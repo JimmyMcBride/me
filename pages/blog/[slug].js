@@ -2,10 +2,10 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import Layout from "../../components/Layout";
-import { Card, Wrapper, Box } from "bushido-strap";
+import { Card, Wrapper, Box } from "sriracha-ui";
 import ReactMarkdown from "react-markdown/with-html";
 import { PrismAsync as SyntaxHighlighter } from "react-syntax-highlighter";
-import dark from "../../oneDark";
+import dark from "../../syntaxTheme";
 
 const CodeBlock = ({ language, value }) => {
   return (
@@ -19,7 +19,7 @@ export default ({ htmlString, data }) => {
   return (
     <Layout title={`${data.title}`}>
       <Wrapper>
-        <Card m="2rem 0 6rem 0" w="94%" maxW="88rem">
+        <Card shade m="2rem 0 6rem 0" w="94%" maxW="88rem" taLeft>
           <Box maxW="100%">
             <ReactMarkdown
               className="markdown-body"

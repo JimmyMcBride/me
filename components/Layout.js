@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Head from "next/head";
-import { Wrapper, NavBar, Box, Flex, Text, theme } from "bushido-strap";
+import { Wrapper, NavBar, Box, Flex, Text, theme } from "sriracha-ui";
 
 const navHeight = "5rem";
 
@@ -16,17 +16,17 @@ export default function Layout({
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <header>
-        <NavBar bg={theme.colors.whiteAlpha9} drape>
+        <NavBar bg={theme.colors.gray0} drape shadow={theme.shadows[3]}>
           <Flex stretch jcBetween aiCenter h={navHeight}>
             <Flex m="0 0 0 2rem">
               <Flex aiCenter p="0 1rem" pointer>
                 <Link href="/" passHref>
                   <Text
+                    as="a"
                     lf
-                    bold
                     pointer
-                    color={theme.gray8}
-                    hvrColor={theme.blackAlpha6}
+                    color={theme.colors.gray9}
+                    hvrColor={theme.colors.blackAlpha6}
                   >
                     Home
                   </Text>
@@ -37,10 +37,10 @@ export default function Layout({
                 <Link href="/blog" passHref>
                   <Text
                     lf
-                    bold
+                    as="a"
                     pointer
-                    color={theme.gray8}
-                    hvrColor={theme.blackAlpha6}
+                    color={theme.colors.gray9}
+                    hvrColor={theme.colors.blackAlpha6}
                   >
                     Blog
                   </Text>
@@ -50,11 +50,11 @@ export default function Layout({
               <Flex aiCenter p="0 1rem" pointer>
                 <Link href="/projects" passHref>
                   <Text
+                    as="a"
                     lf
-                    bold
                     pointer
-                    color={theme.gray8}
-                    hvrColor={theme.blackAlpha6}
+                    color={theme.colors.gray9}
+                    hvrColor={theme.colors.blackAlpha6}
                   >
                     Projects
                   </Text>
@@ -63,11 +63,11 @@ export default function Layout({
             </Flex>
             <Flex aiCenter>
               <Text
-                as="h2"
-                bold
+                as="p"
+                // bold
                 lf
                 m="0"
-                color={theme.gray8}
+                color={theme.colors.gray9}
                 className="my-name"
               >
                 Jimmy McBride
@@ -78,7 +78,6 @@ export default function Layout({
               </Box>
             </Flex>
           </Flex>
-          <Box w="98%" h="1px" bg={theme.gray7} shade />
         </NavBar>
       </header>
       <Flex drape stretch>

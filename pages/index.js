@@ -4,16 +4,16 @@ import Layout from "../components/Layout";
 import fs from "fs";
 import matter from "gray-matter";
 import path from "path";
-import { Card } from "bushido-strap";
+import { Card, Text } from "sriracha-ui";
 import ReactMarkdown from "react-markdown/with-html";
 
-const Home = ({ htmlString }) => (
+const Home = ({ markdownString }) => (
   <Layout title="Jimmy McBride">
-    <Card taCenter w="94%" maxW="88rem">
+    <Card shade w="94%" maxW="88rem">
       <ReactMarkdown
         className="markdown-body"
         escapeHtml={false}
-        source={htmlString}
+        source={markdownString}
       />
     </Card>
   </Layout>
@@ -26,8 +26,7 @@ export const getStaticProps = async () => {
   const parsedMarkdown = matter(markdownWithMetaData);
   return {
     props: {
-      htmlString: parsedMarkdown.content,
-      data: parsedMarkdown.data,
+      markdownString: parsedMarkdown.content,
     },
   };
 };
