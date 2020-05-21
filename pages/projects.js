@@ -8,7 +8,7 @@ import Link from "next/link";
 export default ({ slugs }) => {
   return (
     <Layout title="Projects">
-      <Card shade w="94%" maxW="150rem">
+      <Card shade w="94%" maxW="88rem">
         <Text xlf bold as="h2">
           Some Of My Recent Projects
         </Text>

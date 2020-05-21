@@ -8,7 +8,7 @@ import { Box, Card, Flex, Text, theme } from "sriracha-ui";
 export default ({ slugs }) => {
   return (
     <Layout title="Blog">
-      <Card shade w="94%" maxW="150rem">
+      <Card shade w="94%" maxW="88rem">
         <Text xlf bold as="h2">
           Check out some of my recent blogs!
         </Text>
