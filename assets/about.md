@@ -24,10 +24,10 @@ Experimenting with code is my jam, I'm all about playing around with new ways to
 
 Love to blog about all things related to React, GraphQL, Bash, Linux, and general experimentation with code.
 
----
+<!-- --- -->
 
-Email: mcbride967@gmail.com
+## Contact
 
-[Dev blog](https://dev.to/jimmymcbride)
-
-[Twitter](https://twitter.com/McBride1105)
+| Email                                                                    | GitHub                                                                        | Dev                                                                         | Twitter                                                                        | LinkedIn                                                                                            |
+| ------------------------------------------------------------------------ | ----------------------------------------------------------------------------- | --------------------------------------------------------------------------- | ------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------- |
+| [![Email](https://i.imgur.com/YdWlWnH.png)](mailto:mcbride967@gmail.com) | [![GitHub](https://i.imgur.com/MgnhfQH.png)](https://github.com/JimmyMcBride) | [![Dev Blog](https://i.imgur.com/yQAfadu.png)](https://dev.to/jimmymcbride) | [![Twitter](https://i.imgur.com/3TdECz5.png)](https://twitter.com/McBride1105) | [![LinkedIn](https://i.imgur.com/ADGK3wr.png)](https://www.linkedin.com/in/jimmy-mcbride-183072b6/) |

@@ -1,5 +1,5 @@
 import { Card, Text, Box, Flex, theme } from "sriracha-ui";
-import Layout from "../components/Layout";
+import Layout from "../../components/Layout";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
@@ -16,7 +16,7 @@ export default ({ slugs }) => {
         <Flex wrap="true" jcAround>
           {slugs.map((slug) => {
             return (
-              <Link href={slug.url} passHref>
+              <Link href={slug.url} passHref key={slug.url}>
                 <Card
                   shade
                   w="30rem"
