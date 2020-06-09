@@ -1,13 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Bellota|Ubuntu+Mono|Open+Sans|Ubuntu&display=swap");
 
-.app {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  min-height: 100%;
-}
-
 .nav-cabinet-menu {
   display: none;
 }
