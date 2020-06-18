@@ -4,10 +4,6 @@
   display: none;
 }
 
-.contain {
-  max-width: 100%;
-}
-
 .markdown-body table {
   width: 405px;
   max-width: 100%;

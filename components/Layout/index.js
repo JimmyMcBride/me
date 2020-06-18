@@ -18,7 +18,7 @@ export default function Layout({
   children,
   title = "This is the default title",
 }) {
-  const [isOpen, toggleCabinet] = useCabinet();
+  const { isCabinet, toggleCabinet } = useCabinet();
   return (
     <Wrapper aiStart minH="100%">
       <Head>
@@ -60,7 +60,7 @@ export default function Layout({
           </Flex>
         </NavBar>
       </header>
-      <Cabinet active={isOpen} toggle={toggleCabinet}>
+      <Cabinet active={isCabinet} toggle={toggleCabinet}>
         <Flex drape h="15rem" jcEvenly>
           <NavLinks />
         </Flex>
