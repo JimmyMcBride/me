@@ -6,7 +6,7 @@ import Layout from "../../components/Layout";
 import { Card, Box } from "sriracha-ui";
 import ReactMarkdown from "react-markdown/with-html";
 import { PrismAsync as SyntaxHighlighter } from "react-syntax-highlighter";
-import { dark } from "../../syntaxTheme";
+import dark from "../../syntaxTheme";
 
 const CodeBlock = ({ language, value }) => {
   return (
