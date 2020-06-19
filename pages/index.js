@@ -4,7 +4,7 @@ import fs from "fs";
 import matter from "gray-matter";
 import path from "path";
 import { Card, Box } from "sriracha-ui";
-import ReactMarkdown from "react-markdown/with-html";
+import ReactMarkdown from "react-markdown";
 
 const Home = ({ markdownString }) => (
   <Layout title="Jimmy McBride">
