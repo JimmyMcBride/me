@@ -1,3 +1,4 @@
+import React from "react";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
@@ -5,7 +6,7 @@ import Layout from "../../components/Layout";
 import Link from "next/link";
 import { Box, Card, Flex, Text, theme } from "sriracha-ui";
 
-export default ({ slugs }) => {
+export default function Blog({ slugs }) {
   return (
     <Layout title="Blog">
       <Card shade w="94%" maxW="88rem">
@@ -49,7 +50,7 @@ export default ({ slugs }) => {
       </Card>
     </Layout>
   );
-};
+}
 
 export const getStaticProps = async () => {
   const files = fs.readdirSync("posts");

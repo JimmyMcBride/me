@@ -1,4 +1,4 @@
-export default {
+const dark = {
   'code[class*="language-"]': {
     color: "#c5c8c6",
     textShadow: "0 1px rgba(0, 0, 0, 0.3)",
@@ -152,3 +152,5 @@ export default {
     fontStyle: "italic",
   },
 };
+
+export default dark;

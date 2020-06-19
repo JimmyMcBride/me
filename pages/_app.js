@@ -1,3 +1,4 @@
+import React from "react";
 import App from "next/app";
 import { AppWrapper, theme } from "sriracha-ui";
 import "./styles.css";

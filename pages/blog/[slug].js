@@ -1,3 +1,4 @@
+import React from "react";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
@@ -5,7 +6,7 @@ import Layout from "../../components/Layout";
 import { Card, Box } from "sriracha-ui";
 import ReactMarkdown from "react-markdown/with-html";
 import { PrismAsync as SyntaxHighlighter } from "react-syntax-highlighter";
-import dark from "../../syntaxTheme";
+import { dark } from "../../syntaxTheme";
 
 const CodeBlock = ({ language, value }) => {
   return (
@@ -15,7 +16,7 @@ const CodeBlock = ({ language, value }) => {
   );
 };
 
-export default ({ htmlString, data }) => {
+export default function BlogSlug({ htmlString, data }) {
   return (
     <Layout title={`${data.title}`}>
       <Card shade m="2rem 0 6rem 0" w="94%" maxW="88rem" taLeft>
@@ -30,7 +31,7 @@ export default ({ htmlString, data }) => {
       </Card>
     </Layout>
   );
-};
+}
 
 export const getStaticPaths = async () => {
   const files = fs.readdirSync("posts");
