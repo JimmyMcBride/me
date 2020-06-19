@@ -7,13 +7,9 @@ class MyApp extends App {
   render() {
     const { Component, pageProps } = this.props;
     return (
-      <>
-        <body>
-          <AppWrapper className="app" bg={theme.gray5}>
-            <Component {...pageProps} />
-          </AppWrapper>
-        </body>
-      </>
+      <AppWrapper className="app" bg={theme.gray5}>
+        <Component {...pageProps} />
+      </AppWrapper>
     );
   }
 }
