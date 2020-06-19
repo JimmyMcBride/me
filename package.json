@@ -5,8 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "style": "yarn add sriracha-ui && next dev"
+    "start": "next start -p $PORT",
+    "style": "yarn add sriracha-ui && next dev",
+    "heroku-postbuild": "npm run build"
   },
   "dependencies": {
     "@material-ui/core": "^4.10.2",
