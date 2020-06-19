@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import Layout from "../../components/Layout";
-import { Card, Wrapper, Box } from "sriracha-ui";
+import { Card, Box } from "sriracha-ui";
 import ReactMarkdown from "react-markdown/with-html";
 import { PrismAsync as SyntaxHighlighter } from "react-syntax-highlighter";
 import dark from "../../syntaxTheme";
