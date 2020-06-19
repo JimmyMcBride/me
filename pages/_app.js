@@ -7,7 +7,7 @@ class MyApp extends App {
   render() {
     const { Component, pageProps } = this.props;
     return (
-      <AppWrapper className="app" bg={theme.gray5}>
+      <AppWrapper className="app" bg={theme.color.gray5}>
         <Component {...pageProps} />
       </AppWrapper>
     );

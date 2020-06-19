@@ -33,8 +33,8 @@ export default ({ slugs }) => {
                   </Text>
                   <Text
                     as="a"
-                    color={theme.blue5}
-                    hvrColor={theme.blue8}
+                    color={theme.colors.blue5}
+                    hvrColor={theme.colors.blue8}
                     href={slug.github}
                     bold
                   >
@@ -44,8 +44,8 @@ export default ({ slugs }) => {
                     <Text
                       as="a"
                       bold
-                      color={theme.red5}
-                      hvrColor={theme.red8}
+                      color={theme.colors.red5}
+                      hvrColor={theme.colors.red8}
                       href={slug.youTube}
                       pointer
                     >
