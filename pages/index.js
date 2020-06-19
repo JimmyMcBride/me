@@ -1,6 +1,5 @@
-// import Link from "next/link";
+import React from "react";
 import Layout from "../components/Layout";
-// import about from "../assets/about.md";
 import fs from "fs";
 import matter from "gray-matter";
 import path from "path";
