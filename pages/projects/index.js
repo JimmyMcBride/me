@@ -80,7 +80,7 @@ export const getStaticProps = async () => {
       description: parsedMarkdown.data.description,
     };
   });
-  console.log("slugs foo", slugs);
+  // console.log("slugs foo", slugs);
 
   return {
     props: {
