@@ -2,6 +2,7 @@
 title: "Customize CRA"
 image: "https://i.imgur.com/breWxmx.png"
 description: "Are you tired of deleting the same things and adding the same extra packages to create-react-app just to get up and running? Well, friend, you're in luck! Let's learn how to make our own version of CRA!"
+date: 1576368000
 ---
 
 ## Create Your Own React Template 🎨

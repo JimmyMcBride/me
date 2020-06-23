@@ -4,7 +4,6 @@ import Layout from "../../components/Layout";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import Link from "next/link";
 
 export default function Projects({ slugs }) {
   return (
@@ -17,7 +16,7 @@ export default function Projects({ slugs }) {
         <Flex wrap="true" jcAround>
           {slugs.map((slug) => {
             return (
-              <Link href={slug.url} passHref key={slug.url}>
+              <Box as="a" key={slug.url} href={slug.url}>
                 <Card
                   shade
                   w="30rem"
@@ -38,6 +37,7 @@ export default function Projects({ slugs }) {
                     hvrColor={theme.colors.blue8}
                     href={slug.github}
                     bold
+                    pointer
                   >
                     GitHub
                   </Text>
@@ -53,9 +53,11 @@ export default function Projects({ slugs }) {
                       YouTube Video
                     </Text>
                   ) : null}
-                  <Text p="1rem">{slug.description}</Text>
+                  <Text p="1rem" pointer>
+                    {slug.description}
+                  </Text>
                 </Card>
-              </Link>
+              </Box>
             );
           })}
         </Flex>

@@ -7,6 +7,7 @@ import Link from "next/link";
 import { Box, Card, Flex, Text, theme } from "sriracha-ui";
 
 export default function Blog({ slugs }) {
+  console.log("slugs", slugs);
   return (
     <Layout title="Blog">
       <Card shade w="94%" maxW="88rem">
@@ -61,12 +62,15 @@ export const getStaticProps = async () => {
       .toString();
     const parsedMarkdown = matter(markdownWithMetaData);
     return {
+      date: parsedMarkdown.data.date,
       title: parsedMarkdown.data.title,
       image: parsedMarkdown.data.image,
       description: parsedMarkdown.data.description,
       link: slug,
     };
   });
+
+  slugs.sort((a, b) => b.date - a.date);
 
   return {
     props: {

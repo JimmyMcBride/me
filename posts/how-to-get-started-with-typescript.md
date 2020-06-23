@@ -2,6 +2,7 @@
 title: "Getting Started With TypeScript"
 image: "https://res.cloudinary.com/practicaldev/image/fetch/s--21wLukIy--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://res.cloudinary.com/practicaldev/image/fetch/s---VlDs1XR--/c_imagga_scale%2Cf_auto%2Cfl_progressive%2Ch_420%2Cq_auto%2Cw_1000/https://dev-to-uploads.s3.amazonaws.com/i/dgarrrkw8uv3pcip7833.jpeg"
 description: "TypeScript has a huge ecosystem and you can do pretty much anything with it. Create back end APIs, use it in your Vue or React projects and so much more. Learn the basics to start working with TypeScript today!"
+date: 1590105600
 ---
 
 ## Getting Started With TypeScript

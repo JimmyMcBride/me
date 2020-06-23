@@ -2,6 +2,7 @@
 title: "ESLint And Prettier"
 image: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmiro.medium.com%2Fmax%2F1328%2F1*fA65R1umkZBVJjyBTTy6Xw.png&f=1&nofb=1"
 description: "Setting up linters and code formatters is really important to group projects and solo projects alike. This guide aims to help you easily set these things up in your project."
+date: 1586995200
 ---
 
 ## Setting Up ESLint And Prettier 🎨

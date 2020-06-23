@@ -2,6 +2,7 @@
 title: "Firebase Hosting 101"
 image: "https://res.cloudinary.com/practicaldev/image/fetch/s--h1B5oG-3--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://thepracticaldev.s3.amazonaws.com/i/rcrwu7fyg6guy7na0xv1.png"
 description: "Firebase is an incredible platform to connect any iOS, android and/or web app too. By connecting your project to Google's Firebase you will have access to their cloud storage, cloud firestore and real-time database, authentication, analytics and much more."
+date: 1573603200
 ---
 
 ## Firebase Hosting 101 🔥

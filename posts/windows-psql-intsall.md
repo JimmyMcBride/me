@@ -2,6 +2,7 @@
 title: "Postgres Setup On Windows"
 image: "https://i.imgur.com/hTdGW2y.png"
 description: "In this tutorial we will go over installing PostgreSQL on a Windows 10 machine, install pgAdmin4, as well as set up our path variable for postgres so we can access postgres from our terminal."
+date: 1587772800
 ---
 
 ## Install Postgres On Windows 10
