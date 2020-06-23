@@ -1561,7 +1561,7 @@ babel-plugin-dynamic-import-node@^2.3.3:
   dependencies:
     object.assign "^4.1.0"
 
-"babel-plugin-styled-components@>= 1":
+"babel-plugin-styled-components@>= 1", babel-plugin-styled-components@^1.10.7:
   version "1.10.7"
   resolved "https://registry.yarnpkg.com/babel-plugin-styled-components/-/babel-plugin-styled-components-1.10.7.tgz#3494e77914e9989b33cc2d7b3b29527a949d635c"
   integrity sha512-MBMHGcIA22996n9hZRf/UJLVVgkEOITuR2SvjHLb5dSTUyR4ZRGn+ngITapes36FI3WLxZHfRhkA1ffHxihOrg==
@@ -6120,10 +6120,10 @@ sprintf-js@~1.0.2:
   resolved "https://registry.yarnpkg.com/sprintf-js/-/sprintf-js-1.0.3.tgz#04e6926f662895354f3dd015203633b857297e2c"
   integrity sha1-BOaSb2YolTVPPdAVIDYzuFcpfiw=
 
-sriracha-ui@^0.7.1:
-  version "0.7.1"
-  resolved "https://registry.yarnpkg.com/sriracha-ui/-/sriracha-ui-0.7.1.tgz#30f77791d799b783c9db9c5f72aebe40f1b38eae"
-  integrity sha512-1qajNoDFJj54iDpaI2HUzBkH97t/O/9zIn9Y0tx18TZwq/tn2H1Ax9d7UkVu1tpWPJG7XXTZfv2SOcLz6qHZ+w==
+sriracha-ui@^0.7.2:
+  version "0.7.2"
+  resolved "https://registry.yarnpkg.com/sriracha-ui/-/sriracha-ui-0.7.2.tgz#d477f8a7b9f5530bdc88de1f3d4b35f75ca4bd87"
+  integrity sha512-9NcAbNrAXofzm8Zd90BepS3ztUcnN8QIgUfVs9SdSwZosh9vO9BEq4wm2lLr0CS0vbDAihDtCLTMmYMUb+y/qA==
   dependencies:
     "@callstack/react-theme-provider" "^2.1.0"
     styled-components "^5.0.1"
@@ -6310,7 +6310,7 @@ style-loader@1.2.1:
     loader-utils "^2.0.0"
     schema-utils "^2.6.6"
 
-styled-components@^5.0.1:
+styled-components@^5.0.1, styled-components@^5.1.1:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/styled-components/-/styled-components-5.1.1.tgz#96dfb02a8025794960863b9e8e365e3b6be5518d"
   integrity sha512-1ps8ZAYu2Husx+Vz8D+MvXwEwvMwFv+hqqUwhNlDN5ybg6A+3xyW1ECrAgywhvXapNfXiz79jJyU0x22z0FFTg==
