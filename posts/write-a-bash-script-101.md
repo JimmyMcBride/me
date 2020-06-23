@@ -2,6 +2,7 @@
 title: "Write A Bash Script 101"
 image: "https://res.cloudinary.com/practicaldev/image/fetch/s--y67RfP8r--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://thepracticaldev.s3.amazonaws.com/i/g5hre048t082zdqhfgr2.jpeg"
 description: "If you have been creating/changing directories left and right, touching new files, slinging out some basic git commands, opening your favorite code editor from the terminal, running servers and you're ready to take things to the next level, this blog is for you my friend!"
+date: 1576454400
 ---
 
 ## Write A Bash Script 101

@@ -2,6 +2,7 @@
 title: "Bash Script Tool Kit"
 image: "https://res.cloudinary.com/practicaldev/image/fetch/s--8Jv9KS----/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://thepracticaldev.s3.amazonaws.com/i/4n4gq7l7gxosv6uqj9il.jpeg"
 description: "The purpose of this blog is to serve as a reference (or tool kit) of different bash commands, that you can use as you start creating new bash scripts, and to help open the door of endless possibilities of productivity the world of bash scripts has to offer."
+date: 1576713600
 ---
 
 ## Bash Script Tool Kit 🛠

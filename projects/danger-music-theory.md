@@ -1,6 +1,6 @@
 ---
 title: Danger! Music Theory
-url: https://jimmymcbride.github.io/DANGER-Music-Theory/cmajkey.html
+url: https://jimmymcbride.github.io/DANGER-Music-Theory/cmajkey
 github: https://github.com/JimmyMcBride/DANGER-Music-Theory
 youTube:
 img: https://i.imgur.com/V0nd1I8.jpg
