@@ -7,7 +7,6 @@ import "sriracha-ui/css/main.css";
 export default function MyApp(props) {
   useEffect(() => {
     const imgs = document.querySelectorAll("img");
-    console.log(imgs);
     imgs.forEach((img) => (img.loading = "lazy"));
   }, []);
 

@@ -11,6 +11,10 @@
   margin-right: auto;
 }
 
+.contain {
+  max-width: 100%;
+}
+
 @media only screen and (max-width: 650px) {
   .nav-cabinet-menu {
     display: block;
