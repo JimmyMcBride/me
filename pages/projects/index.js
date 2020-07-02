@@ -16,7 +16,7 @@ export default function Projects({ slugs }) {
         <Flex wrap="true" jcAround>
           {slugs.map((slug) => {
             return (
-              <Box as="a" key={slug.url} href={slug.url}>
+              <Box key={slug.link}>
                 <Card
                   shade
                   w="30rem"
@@ -25,12 +25,21 @@ export default function Projects({ slugs }) {
                   p="0"
                   hvrShadow={theme.shadows[2]}
                 >
-                  <Box pointer>
+                  <Box pointer as="a" href={`/projects/${slug.link}`}>
                     <img src={slug.img} alt="thumbnail" />
                   </Box>
-                  <Text lf bold pointer>
+                  <Text
+                    lf
+                    bold
+                    pointer
+                    as="a"
+                    href={`/projects/${slug.link}`}
+                    color={theme.colors.gray9}
+                    hvrColor={theme.colors.gray7}
+                  >
                     {slug.title}
                   </Text>
+                  <Box h="1rem" />
                   <Text
                     as="a"
                     color={theme.colors.blue5}
@@ -41,21 +50,17 @@ export default function Projects({ slugs }) {
                   >
                     GitHub
                   </Text>
-                  {slug.youTube ? (
-                    <Text
-                      as="a"
-                      bold
-                      color={theme.colors.red5}
-                      hvrColor={theme.colors.red8}
-                      href={slug.youTube}
-                      pointer
-                    >
-                      YouTube Video
-                    </Text>
-                  ) : null}
-                  <Text p="1rem" pointer>
+                  <Text
+                    as="a"
+                    p="1rem"
+                    pointer
+                    href={`/projects/${slug.link}`}
+                    color={theme.colors.gray9}
+                    hvrColor={theme.colors.gray9}
+                  >
                     {slug.description}
                   </Text>
+                  <Box h="2rem" />
                 </Card>
               </Box>
             );
@@ -76,14 +81,12 @@ export const getStaticProps = async () => {
     const parsedMarkdown = matter(markdownWithMetaData);
     return {
       title: parsedMarkdown.data.title,
-      url: parsedMarkdown.data.url,
-      github: parsedMarkdown.data.github,
-      youTube: parsedMarkdown.data.youTube,
       img: parsedMarkdown.data.img,
+      github: parsedMarkdown.data.github,
       description: parsedMarkdown.data.description,
+      link: slug,
     };
   });
-  // console.log("slugs foo", slugs);
 
   return {
     props: {

@@ -7,7 +7,6 @@ import Link from "next/link";
 import { Box, Card, Flex, Text, theme } from "sriracha-ui";
 
 export default function Blog({ slugs }) {
-  console.log("slugs", slugs);
   return (
     <Layout title="Blog">
       <Card shade w="94%" maxW="88rem">
