@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-// import App from "next/app";
 import { AppWrapper, theme } from "sriracha-ui";
 import "./styles.css";
 import "sriracha-ui/css/main.css";
