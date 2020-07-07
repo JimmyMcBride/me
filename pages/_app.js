@@ -3,6 +3,8 @@ import { AppWrapper, theme } from "sriracha-ui";
 import "./styles.css";
 import "sriracha-ui/css/main.css";
 
+// MyApp
+
 export default function MyApp(props) {
   useEffect(() => {
     const imgs = document.querySelectorAll("img");
