@@ -15,7 +15,7 @@ This project has a near and dear place to my heart. This project was one of my v
 
 ### My Contribution
 
-The website and the content were all built and written by myself. I took extra time to color coat each note one specific color. I also created tabs and images of scale shapes on the fretboard with GIMP. I spent a lot of time on this. If I only knew then, what I knew now, I could have built the whole thing a lot faster.
+[DANGER! Music Theory](https://jimmymcbride.github.io/DANGER-Music-Theory/cmajkey) and the content were all built and written by myself. I took extra time to color coat each note one specific color. I also created tabs and images of scale shapes on the fretboard with GIMP. I spent a lot of time on this. If I only knew then, what I knew now, I could have built the whole thing a lot faster.
 
 ### Projects Impact
 

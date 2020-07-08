@@ -21,7 +21,7 @@ export default function Layout({
 }) {
   const { isCabinet, toggleCabinet } = useCabinet();
   return (
-    <Wrapper aiStart minH="100%">
+    <Wrapper aiStart>
       <Head>
         <title>{title}</title>
         <meta charSet="utf-8" />
