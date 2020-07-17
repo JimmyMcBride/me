@@ -1,13 +1,13 @@
 ---
-title: "Best Markdown Editor"
-image: "https://firebasestorage.googleapis.com/v0/b/best-markdown-editor.appspot.com/o/images%2Fheroku.png?alt=media&token=defb3b3d-08db-4d31-aeb9-ada552509c5d"
+title: "Deploy With Heroku Pipeline"
+image: "https://i.imgur.com/HNDp184.png"
 description: "Heroku is an amazing hosting platform for any project. Today, I spun up a create Next app to show you how easy it is to set up a Heroku pipeline connected to a GitHub repository and have your project, front or back end, deployed in minutes with a wonderful staging environment set up."
 date: 1590364800
 ---
 
 ## Deploy With Heroku Pipeline
 
-![heroku.png](https://firebasestorage.googleapis.com/v0/b/best-markdown-editor.appspot.com/o/images%2Fheroku.png?alt=media&token=defb3b3d-08db-4d31-aeb9-ada552509c5d)
+![heroku.png](https://i.imgur.com/HNDp184.png)
 
 ## Overview
 
