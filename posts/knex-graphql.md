@@ -1,7 +1,7 @@
 ---
 title: "Knex - Graphql Back End"
 image: "https://i.imgur.com/yiDtHBp.png"
-description: "Firebase is an incredible platform to connect any iOS, android and/or web app too.  By connecting your project to Google's Firebase you will have access to their cloud storage, cloud firestore and real-time database, authentication, analytics and much more."
+description: "Learn the basics of building an express API with GraphQL, Postgres, and knex today!"
 date: 1587340800
 ---
 
@@ -13,9 +13,9 @@ date: 1587340800
 
 Create a project directory. `mkdir knex-graphql`.
 
-Then run `yarn init`. When it asks your for the main file, add `src/index.js`.
+Then run `yarn init`. When it asks you for the main file, add `src/index.js`.
 
-Now that have that ready we can star adding the dependencies we're going to need.
+Now that have that ready we can start adding the dependencies we're going to need.
 
 > Graphql has a rich ecosystem with many amazing options. Feel free to experiment with the plethora of amazing graphql tools out there!
 
@@ -31,11 +31,11 @@ node_modules/
 yarn-error.log
 ```
 
-Now that we have all our tools added, let's set up out database!
+Now that we have all our tools added, let's set up our database!
 
 ### Step 2
 
-Let's create a sql file and set up some scripts in our package.json.
+Let's create a SQL file and set up some scripts in our package.json.
 
 `touch remakeDatabase.sql`
 
@@ -61,7 +61,7 @@ Now we can use the command `yarn db-remake` anytime we want to rollback our data
 
 ### Step 3
 
-It's time to get knex set up! In root directory, run: `knex init`. We don't need everything in here, so we're just going to delete staging and testing environments and set knex up to work with postgres.
+It's time to get knex set up! In the root directory, run: `knex init`. We don't need everything in here, so we're just going to delete staging and testing environments and set knex up to work with Postgres.
 
 ```javascript
 // knexfile.js
@@ -132,7 +132,7 @@ We have our migrations and seeds set up now, let's run them and make sure everyt
 }
 ```
 
-You probably we added `knex-refresh` and `total-reset`. Knex refresh command refreshes our migrations and runs our seeds in one command. If we make any changes to schema that breaks our postgres tables, we can just roll the whole thing back, database and all before we run our new migrations as seeds.
+You probably added `knex-refresh` and `total-reset`. Knex refresh command refreshes our migrations and runs our seeds in one command. If we make any changes to the schema that breaks our Postgres tables, we can just roll the whole thing back, database, and all before we run our new migrations as seeds.
 
 One **final** thing. We need to `touch src/data/knexConfig.js` and add the following code to it:
 
@@ -147,7 +147,7 @@ module.exports = knex(knexConfig.development);
 
 In our package.json we have our main file set as `src/index.js`. Let's set that up. Run: `mkdir src && touch src/index.js`.
 
-Before we set up our index.js, let's add a couple env variables we will need.
+Before we set up our index.js, let's add a couple of env variables we will need.
 
 Create a .env file in the root of your project and add:
 
@@ -156,7 +156,7 @@ PORT = 4000
 DATABASE_URL = postgres://postgres:password@localhost:5432/my_db
 ```
 
-Now that that we have those variables in place, let's write some code! 🔥
+Now that we have those variables in place, let's write some code! 🔥
 
 ```javascript
 // src/index.js

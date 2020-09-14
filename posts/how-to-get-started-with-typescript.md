@@ -11,7 +11,7 @@ date: 1590105600
 
 ### Overview
 
-Today we're going to be going over the basics of TypeScript. TypeScript has a huge ecosystem and you can do pretty much anything with it. Create back end APIs, use it in your Vue or React projects and so much more. Angular developers even go as far as to use TypeScript to farm carrots!
+Today we're going to be going over the basics of TypeScript. TypeScript has a vast ecosystem, and you can do pretty much anything with it. Create back end APIs, use it in your Vue or React projects, and so much more.
 
 Today, we're just going to cover the basics.
 
@@ -19,8 +19,6 @@ Today, we're just going to cover the basics.
 - Why should I use TypeScript?
 - How do I use TypeScript?
 - What's the syntax?
-
-> Sorry if you were hoping to learn about carrot farming... 🥕👨‍🌾
 
 ### What It Is
 
@@ -42,9 +40,9 @@ function multiply(a, b) {
 multiply("bill", 2); // NaN
 ```
 
-If your working on some state logic in say, your react app and incorrect data types get passed to your code, this can cause some hard to find issues.
+If your working on some state logic in say, your react app and incorrect data types get passed to your code; this can cause some hard to find issues.
 
-Not to worry, since we declare our data types in TypeScript, if we accidentally pass a string into our multiply function then we'll get an error right away letting us know that `"bill"` is an incorrect data type of 'string' and should be a 'number'.
+Not to worry. Since we declare our data types in TypeScript, if we accidentally pass a string into our multiply function, then we'll get an error right away, letting us know that `"bill"` is an incorrect data type of 'string' and should be a 'number.'
 
 You also have some awesome IntelliSense available to you in the TypeScript world as a result of type declarations.
 
@@ -58,7 +56,7 @@ const john = {
 };
 ```
 
-When we want to call john's name, once we type `john.` we will see a list of keys available to use and can just tab complete the name key. Also, if you try and select a key that doesn't exist, for example: `john.location`, you will get a red error right away saying that location does not exist on the 'john' object. Even further, if you did something like; `john.nmae`, you would get back a message that said something like, `nmae does not exist on the object john. Did you mean 'john.name'?`. Well, yes. Yes, I did mean `john.name`. Thanks, TypeScript!
+When we want to call john's name, once we type `john.` we will see a list of keys available to use and can tab-complete the name key. Also, if you try and select a key that doesn't exist, for example: `john.location`, you will get a red error right away saying that location does not exist on the 'john' object. Even further, if you did something like; `john.nmae`, you would get back a message that said something like, `nmae does not exist on the object john. Did you mean 'john.name'?`. Well, yes. Yes, I did mean `john.name`. Thanks, TypeScript!
 
 ### How To Use TypeScript
 
@@ -66,7 +64,7 @@ You have three options; Node.js, Deno, or both!
 
 Deno is super cool. I'm not going to go into it too deep here, but it comes with native support for TypeScript and uses Rust to compile your TypeScript code into JavaScript. 😲 [You can install it and read more about Deno here!](https://deno.land/)
 
-With Node, you can run `npm i -g typescript ts-node` to add it globally to your computer. Then you can create TypeScript files and run them as you would with node, but with ts-node instead. Example: `ts-node index.ts` will run your TypeScript file, similar to how `node index.js` would work. Libraries and frameworks like Vue and React often come with TypeScript templates you can use to bootstrap a project with TypeScript.
+With Node, you can run `npm i -g typescript ts-node` to add it globally to your computer. Then you can create TypeScript files and run them as you would with Node, but with ts-node instead. Example: `ts-node index.ts` will run your TypeScript file, similar to how `node index.js` would work. Libraries and frameworks like Vue and React often come with TypeScript templates you can use to bootstrap a project with TypeScript.
 
 ### The Syntax
 
@@ -108,7 +106,7 @@ function math(num1: number, num2: number, op: string) {
 math(2, 2, "add"); // 2
 ```
 
-What about objects though? Say we refactored our math function to take in an object instead:
+What about objects, though? Say we refactored our math function to take in an object instead:
 
 ```typescript
 interface MathArgs {
@@ -205,8 +203,8 @@ function argChecker(arg: any) {
 }
 
 /*
-  The argument 'arg' can be anything. If it's a string, we return a string.
-  However, if it's any other type, it will return 'null'.
+  The argument 'arg' can be anything. If it's a string, then we return a string.
+  However, if it's any other type, it will return 'null.'
   So this function only returns two types; string and null.
 
   Let's declare those types for the return of our function:
@@ -217,7 +215,7 @@ function argChecker(arg: any): string | null {
 }
 ```
 
-In JavaScript, if you want to say "or" you use the `||` operator. But, when you declare your types you only want to use one `|`.
+In JavaScript, if you want to say "or," you use the `||` operator. But, when you declare your types, you only want to use one `|`.
 
 We can do some fancy stuff with declaring array's as well:
 
@@ -237,6 +235,6 @@ function myPromise(): Promise<string> {
 
 ### Conclusion
 
-And that's about it for today folks! I didn't cover every aspect of TypeScript today. My main goal was to brush over the basics of everything you need to get started being able to use TypeScript today.
+And that's about it for today, folks! I didn't cover every aspect of TypeScript today. My main goal was to brush over the basics of everything you need to get started being able to use TypeScript today.
 
 I'm very passionate about creating full-stack applications with React, Next.js, Node, and GraphQL. So be looking forward to more blogs about using TypeScript in the context of those technologies as well! 🔥 Thanks for reading! Take it easy. 😎
