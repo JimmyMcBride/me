@@ -1,4 +1,4 @@
-# Technical Product Lead at Lambda School ![lambda school logo](https://i.imgur.com/fLDbfDP.png)
+# Full Stack Web Developer For Hire! ![lambda school logo](https://i.imgur.com/fLDbfDP.png)
 
 ![about me banner](https://i.imgur.com/0PP3oVh.png)
 
@@ -6,7 +6,7 @@
 
 <!-- -------------------------------- -->
 
-**JavaScript | TypeScript | Python | React | Bash | Linux | Node | GraphQL | REST**
+**Rust | Golang | TypeScript | Python | React/Next.js | Vue/Nuxt | Bash | Linux | SQL/NoSQL | GraphQL | REST**
 
 <!-- -------------------------------- -->
 
@@ -16,7 +16,8 @@
 
 I have a huge passion for developing full stack applications.
 
-I'm the proud owner of my own open source style library, sriracha-ui.
+I'm the proud owner of my own open source style projects, [Sriracha UI](https://sriracha-docs.vercel.app/)
+and [Best Markdown Editor](https://www.bestmarkdowneditor.app/).
 
 Big Linux nut. You can typically catch me writing bash scripts and working on my dotfiles.
 
